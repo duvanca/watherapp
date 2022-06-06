@@ -27,7 +27,7 @@ const CardsWeather = () => {
       }
     navigator.geolocation.getCurrentPosition(success)
 },[])
-      
+     
     
       useEffect(()=>{
           if(latLon !== undefined){
@@ -40,6 +40,8 @@ const CardsWeather = () => {
         } ,[latLon])
 
         console.log(weather)
+
+       
 
         const hour= new Date().getHours()
         const minute= new Date().getMinutes()
