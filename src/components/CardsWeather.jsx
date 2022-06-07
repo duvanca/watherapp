@@ -1,5 +1,6 @@
 import React from 'react'
 import sol from "../assets/img/sol.svg"
+import luna from "../assets/img/luna.svg"
 import {useState,useEffect } from 'react'
 import axios from 'axios'
 
@@ -63,7 +64,7 @@ const CardsWeather = () => {
         
         <div className="weather__dates">
             
-            <img className="weather__dates-img" src={sol} alt="logo" />
+            <img className="weather__dates-img" src={hour<18 ?sol:luna} alt="logo" />
             <ul className="weather__dates-items">
                <li><h4><i class='bx bx-wind'></i>  Wind Speed : <span>{weather?.wind.speed} m/s</span></h4></li>
                <li><h4><i class='bx bx-cloud'></i> Clouds : <span> {weather?.clouds.all} %</span></h4> </li>
